@@ -1,9 +1,16 @@
 import speech_recognition as sr
 import pyttsx3
+from aiResponse.py import GptResponse
 
 # Initialize the recognizer and the text-to-speech engine
 listener = sr.Recognizer()
 engine = pyttsx3.init()
+
+#Open ai API key
+api_key = "your_openai_api_key"
+
+#Initialize the GPT class
+get_instance = GptResponse(api_key)
 
 # Function to convert text to speech
 def talk(text):
@@ -44,7 +51,8 @@ def respond(command):
         talk("Goodbye! Have a nice day!")
         return False
     else:
-        talk("Sorry, I don't know how to respond to that.")
+        chat_response = gpt_instance.get_response(command)
+        talk(chat_response)
     return True
 
 # Main function to run the voice assistant
