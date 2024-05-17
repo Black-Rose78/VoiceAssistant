@@ -4,9 +4,9 @@
 This project is a simple voice assistant that listens to voice commands and responds using text-to-speech. It uses the `speech_recognition` library for recognizing speech and the `pyttsx3` library for text-to-speech conversion.
 
 ## Features
-- **Speech Recognition:** Listens to voice commands using the microphone.
-- **Text-to-Speech:** Responds to commands using a text-to-speech engine.
-- **Basic Command Processing:** Recognizes and responds to a few basic commands.
+- Speech Recognition: Listens to voice commands using the microphone.
+- Text-to-Speech: Responds to commands using a text-to-speech engine.
+- Basic Command Processing: Recognizes and responds to a few basic commands.
 
 ## Requirements
 - Python 3.x
@@ -15,15 +15,15 @@ This project is a simple voice assistant that listens to voice commands and resp
 
 ## Setup
 1. **Clone the Repository:**
-    ```sh
+    sh
     git clone https://github.com/Black-Rose78/VoiceAssistant.git
     cd voice-assistant
-    ```
+    
 
 2. **Install Required Libraries:**
-    ```sh
+    sh
     pip install speechrecognition pyttsx3
-    ```
+    
 
 3. **Run the Voice Assistant:**
     ```sh
