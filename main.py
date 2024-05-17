@@ -17,7 +17,7 @@ def listen():
             print("Listening...")
             listener.adjust_for_ambient_noise(source)
             voice = listener.listen(source)
-            command = listener.recognize_google_cloud(voice)
+            command = listener.recognize_sphinx(voice)
             command = command.lower()
             print("You said: " + command)
             return command
